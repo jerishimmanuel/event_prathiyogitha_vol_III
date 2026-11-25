@@ -3534,7 +3534,7 @@ body {
     <main id="main-site" class="hidden">
 
         <video id="background-video" loop playsinline preload="none">
-            <source src="assets/background_vidoe.mp4" type="video/mp4">
+            <source src="https://res.cloudinary.com/dj3jtqee/video/upload/v1795627373/background_vidoe.mp4" type="video/mp4">
         </video>
 
         <div class="homepage-overlay"></div>
@@ -5228,8 +5228,8 @@ function loadEntryVideo() {
     const mobile = window.matchMedia("(max-width: 768px)").matches;
 
     const videoPath = mobile
-        ? "assets/entry_video_portrait_4k.mp4"
-        : "assets/entry_video_landscape_4k.mp4";
+        ? "https://res.cloudinary.com/dj3jtqee/video/upload/v1795628094/entry_video_portrait_4k.mp4"
+        : "https://res.cloudinary.com/dj3jtqee/video/upload/v1795627916/entry_video_landscape_4k.mp4";
 
     if (!entryVideo.src.endsWith(videoPath)) {
         entryVideo.src = videoPath;
